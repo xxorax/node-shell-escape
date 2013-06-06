@@ -1,0 +1,13 @@
+{
+  "name": "shell-escape",
+  "version": "0.0.0",
+  "description": "Escape and stringify an array of arguments to be executed on the shell",
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "main": "./shell-escape.js",
+  "scripts": {
+    "test": "for f in test/*; do echo \"$f\"; node \"$f\" || exit 1; echo; done; echo Passed; exit 0"
+  },
+  "repository": "git://github.com/bahamas10/node-shell-escape.git",
+  "license": "MIT",
+  "dependencies": {}
+}
