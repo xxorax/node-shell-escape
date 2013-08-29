@@ -44,7 +44,14 @@ console.log(escaped);
 yields
 
 ```
-echo 'hello!' 'how are you doing $USER' '"double"' '\'single\''
+echo 'hello!' 'how are you doing $USER' '"double"' ''"'"'single'"'"''
+```
+
+and when run on the shell
+
+```
+$ echo 'hello!' 'how are you doing $USER' '"double"' ''"'"'single'"'"''
+hello! how are you doing $USER "double" 'single'
 ```
 
 License
