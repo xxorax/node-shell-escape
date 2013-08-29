@@ -43,6 +43,9 @@ function shellescape(a) {
       }
     }
 
+    // escaping ' doesn't work, replace with ''"'"'
+    s = s.replace(/\\\'/g, '\'"\'"\'');
+
     ret.push(s);
   });
 
