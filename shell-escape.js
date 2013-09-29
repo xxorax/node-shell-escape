@@ -31,7 +31,8 @@ var escapechars = [
 module.exports = shellescape;
 
 // return a shell compatible format
-function shellescape(a) {
+function shellescape(a, options) {
+  options = typeof options !== 'undefined' ? options : {};
   var ret = [];
 
   a.forEach(function(s) {
@@ -49,5 +50,8 @@ function shellescape(a) {
     ret.push(s);
   });
 
+  if(options.returnArray == true){
+    return ret;
+  }
   return ret.join(' ');
 }

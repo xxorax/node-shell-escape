@@ -54,6 +54,24 @@ $ echo 'hello!' 'how are you doing $USER' '"double"' ''"'"'single'"'"''
 hello! how are you doing $USER "double" 'single'
 ```
 
+### Returning an array
+
+You can return an array suitable for use with Node.js child_process.spawn.
+
+```js
+var shellescape = require('shell-escape');
+var args = ['-la', '/tmp/my path'];
+
+var escaped = shellescape(args, {returnArray: true});
+console.log(escaped);
+```
+
+yields
+
+```
+[ '-la', '\'/tmp/my path\'' ]
+```
+
 License
 -------
 
