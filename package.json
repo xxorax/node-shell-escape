@@ -1,6 +1,6 @@
 {
   "name": "shell-escape",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Escape and stringify an array of arguments to be executed on the shell",
   "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
   "main": "./shell-escape.js",
