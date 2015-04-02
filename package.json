@@ -1,6 +1,6 @@
 {
   "name": "shell-escape",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Escape and stringify an array of arguments to be executed on the shell",
   "author": [
     "Martin PANEL <martin@xorax.info> (http://xorax.info)",

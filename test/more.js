@@ -4,6 +4,8 @@ var assert = require('assert');
 
 var d = {
   "echo 'hello\\nworld'": ['echo', 'hello\\nworld'],
+  "echo hello:world": ['echo', 'hello:world'],
+  "echo --hello=world": ['echo', '--hello=world'],
   "echo 'hello\\tworld'": ['echo', 'hello\\tworld'],
   "echo '\thello\nworld'\\'": ['echo', '\thello\nworld\''],
   "echo 'hello  world'": ['echo', 'hello  world'],
