@@ -1,3 +1,5 @@
+if (process.platform === 'win32') return;
+
 var shellescape = require('../');
 
 var assert = require('assert');

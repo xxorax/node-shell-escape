@@ -8,7 +8,7 @@
   ],
   "main": "./shell-escape.js",
   "scripts": {
-    "test": "for f in test/*; do echo \"$f\"; node \"$f\" || exit 1; echo; done; echo Passed; exit 0"
+    "test": "node test.js"
   },
   "repository": "git://github.com/xxorax/node-shell-escape.git",
   "license": "MIT",
