@@ -1,6 +1,5 @@
 var child_process = require('child_process');
 var assert = require('assert');
-var util = require('util');
 var shellescape = require('..');
 
 if (process.platform !== 'win32') return;
